@@ -14,7 +14,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 
 header {}
 header h1 {color: #B84DF4;
-				font-family:"Comic Sans MS", sans-serif;
+				font-family: "Roboto Slab", serif;
 				font-size: 24px;
 				margin-top: -7%;
 				margin-left:75px;
@@ -27,34 +27,24 @@ header img {position:relative;
 			
 				}
 header .subheading {color: #FFB046;
-				font-family:"Comic Sans MS", sans-serif;
+				font-family: "Roboto Slab", serif;
 				font-size: 16px;
 				text-align: center;
 				padding-bottom:1px;
 				}
+				
+.ham { display: block;position: absolute;top: 2.0rem;right: 1.25rem; }
 
-nav {padding:1em;}
-nav button {position:absolute;
-			right:0px;
-			margin-top:-100px;
-			background-color:#B84DF4}
-
-nav ul {visibility:hidden;
-		background-color:#FFB046;
-		font-family: "Trebuchet MS", sans-serif;
-		font-size: 16px;
-		display:block;
-		text-align:center;
-		margin-bottom:-200px;
-		}
-nav ul li {display:inline;}
-nav ul li a {display:inline-block;}
-nav ul li.active a {color: #0000FF;}
-nav ul li a:hover {color:red}
+.navi { list-style: none; padding-left: 0; }
+.navi li { display: none; }
+.navi.responsive { position: relative; }
+.navi.responsive li { background-color: #eee; display: block; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
+.navi.responsive li a {   padding: 1rem; text-align: center;  display: block; text-decoration:none; }.navigation.responsive li a:hover { background-color: #ddd; }
+}
 
 main {}
 main h2 {text-align:center;
-		 font-family:"Comic Sans MS", sans-serif;
+		 font-family: "Roboto Slab", serif;
 		 font-size: 24px;
 		 color:#FFB046;}
 		 
@@ -68,13 +58,13 @@ main figure img {width:95%;
 
 section {display:flex;
 		  margin-bottom:-35px;
-		  font-family: "Trebuchet MS", sans-serif}
+		  font-family:"Comic Sans MS", sans-serif;}
 section picture img{width:100%;
 				    padding:.5em;
 				    text-align:center;
 				   }
 .current{width:20%;
-		font-family: "Trebuchet MS", sans-serif;}
+		font-family:"Comic Sans MS", sans-serif;}
 .sunny{font-size:22px;
 		color:#B84DF4;
 		text-align:center;
@@ -96,17 +86,18 @@ section picture img{width:100%;
 				 padding-top:2em;
 				 }
 article{text-align:center;
-		font-family: "Trebuchet MS", sans-serif
+		font-family:"Comic Sans MS", sans-serif;
 		}
 article h3{color: #B84DF4;
 			font-size:22px;
-			font-family:"Comic Sans MS", sans-serif;}
+			font-family: "Roboto Slab", serif;}
 article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
   width: 85%; /* fill the page in the small/phone view */
 }
 
 footer {background-color: #FFB046;
 		text-align: center;
+		font-family:"Comic Sans MS", sans-serif;
 		}
 		
 footer aside {

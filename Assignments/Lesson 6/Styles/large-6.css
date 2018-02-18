@@ -16,7 +16,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 
 header {}
 header h1 {color: #B84DF4;
-				font-family:"Comic Sans MS", sans-serif;
+				font-family: "Roboto Slab", serif;
 				font-size: 24px;
 				margin-top: -7%;
 				margin-left:100px;
@@ -30,12 +30,27 @@ header img {position:relative;
 			
 				}
 header .subheading {color: #FFB046;
-				font-family:"Comic Sans MS", sans-serif;
+				font-family: "Roboto Slab", serif;
 				font-size: 16px;
 				text-align: center;
 				padding-bottom:1px;
 				}
+.ham { visibility:hidden;display: block;position: absolute;top: 2.0rem;right: 1.25rem; }
 
+.navi { visibility:visible;
+		background-color:#FFB046;
+		font-family:"Comic Sans MS", sans-serif;
+		font-size: 16px;
+		display:block;
+		text-align:center;
+		padding:1.3em;
+		margin-bottom:5px;}
+		
+.navi li { display:inline; }
+.navi.responsive { position: relative; }
+.navi.responsive li { background-color: #eee; display: block; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
+.navi.responsive li a {   padding: 1rem; text-align: center;  display: block; text-decoration:none; }.navigation.responsive li a:hover { background-color: #ddd; }
+}
 nav {padding:1em;}
 nav button {position:absolute;
 			right:0px;
@@ -45,7 +60,7 @@ nav button {position:absolute;
 nav ul {visibility:hidden;
 		visibility:visible;
 		background-color:#FFB046;
-		font-family: "Trebuchet MS", sans-serif;
+		font-family:"Comic Sans MS", sans-serif;
 		font-size: 16px;
 		display:block;
 		text-align:center;
@@ -59,7 +74,7 @@ nav ul li a:hover {color:red}
 
 main {}
 main h2 {text-align:center;
-		 font-family:"Comic Sans MS", sans-serif;
+		 font-family: "Roboto Slab", serif;
 		 font-size: 24px;
 		 color:#FFB046;}
 		 
@@ -72,7 +87,7 @@ main figure img {width:95%;
 				}
 
 section {
-		  font-family: "Trebuchet MS", sans-serif
+		  font-family: "Roboto Slab", serif;
 		  }
 section picture img{width:40%;
 				    padding:.5em;
@@ -86,7 +101,7 @@ section picture img{width:40%;
 		margin-top:unset;
 		margin-bottom:unset;}				   
 .current{width:33%;
-		 font-family: "Trebuchet MS", sans-serif;
+		 font-family: "Roboto Slab", serif;
 		 }	
 .sunny{font-size:22px;
 		color:#B84DF4;
@@ -120,9 +135,9 @@ section picture img{width:40%;
 				 }
 article h3{color: #B84DF4;
 			font-size:22px;
-			font-family:"Comic Sans MS", sans-serif;}
+			font-family: "Roboto Slab", serif;}
 article p.town-article{display:flex;
-			  font-family: "Trebuchet MS", sans-serif;
+			  font-family:"Comic Sans MS", sans-serif;
 			  width:100%;
 
 article p img {
@@ -131,6 +146,7 @@ article p img {
 
 footer {background-color: #FFB046;
 		text-align: center;
+		font-family:"Comic Sans MS", sans-serif;
 		}
 		
 footer aside {

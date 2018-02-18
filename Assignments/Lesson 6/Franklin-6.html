@@ -23,9 +23,9 @@
   </header>
 
   <!-- site navigation use placeholder references -->
+ <button class="ham" onclick="toggleHam()">&#9776;</button> 
   <nav>
-    <button onclick="toggleNavMenu()">&#9776;</button>
-    <ul>
+    <ul class="navi">
     	<li><a href="#">Home</a></li>
     	<li class="active"><a href="#">How's Franklin</a></li>
     	<li><a href="#">How's Greenville</a></li>
@@ -37,7 +37,10 @@
     
   <main>
 	<figure>
-      <img src="https://github.com/ajaxx5/ajaxx5.github.io/blob/master/Assignments/Lesson%206/Images/franksmall.jpg?raw=true" alt="sunny field" width="200">
+      <img src="https://github.com/ajaxx5/ajaxx5.github.io/blob/master/Assignments/Lesson%206/Images/franksmall.jpg?raw=true" alt="franklin" 
+	     srcset="https://github.com/ajaxx5/ajaxx5.github.io/blob/master/Assignments/Lesson%206/Images/franksmall.jpg?raw=true 1x,
+	           https://github.com/ajaxx5/ajaxx5.github.io/blob/master/Assignments/Lesson%206/Images/frankmedium.jpg?raw=true 2x,
+			   https://github.com/ajaxx5/ajaxx5.github.io/blob/master/Assignments/Lesson%206/Images/franklarge.jpg?raw=true 3">
     </figure></div>
 	<div class="frank">
 	<h2>How's Franklin?</h2>
@@ -114,11 +117,13 @@
 		(999) 999-9999<br>
 	  contact@whatstheweatherlike.com</p>
     </aside>
-    <p class="footer-bar">&copy;2017 All Rights Reserved | What's the Weather like up there? | <span id="currentdate"> </span></p>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | What's the Weather like up there? | <span id="currentdate">Feb 17,2018 </span></p>
   </footer>
 
-  <script src="scripts/hamburger.js"></script>
-  <script src="scripts/currentdate.js"></script>
+  <script src="Scripts/hamburger.js"></script>
+  <script src="Scripts/currentdate.js"></script>
+  <script type="text/javascript">date();</script>
+ 
 
 </body>
 </html>
