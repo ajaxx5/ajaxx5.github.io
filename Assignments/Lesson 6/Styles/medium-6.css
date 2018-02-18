@@ -145,9 +145,10 @@ article h3{color: #B84DF4;
 			}
 article p.town-article{display:flex;
 			  font-family:"Comic Sans MS", sans-serif;
-			  width:100%;
+			  width:85%;
 			 }
-article img {  
+article img {
+			width: 50%;
 			}
 
 footer {background-color: #FFB046;
