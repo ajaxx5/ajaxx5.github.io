@@ -1,8 +1,13 @@
-@media only screen and (min-width: 64em) {
-  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
   
-  article p.town-article img { width: 29.333%; }
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+  
+  section.forecast { display: flex; flex-direction: column;}  /* show the 10-day forecast with the medium view and up */
+  
+  article p.town-article img { width: 62.666%; display: flex; justify-content: flex-end; }  /* responsive images */
+
+  * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 16px;
@@ -12,16 +17,17 @@ body {
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+  max-width: 100%;
+  
 }
 
 header {}
 header h1 {color: #B84DF4;
-				font-family: "Roboto Slab", serif;
+				font-family: "Roboto Slab", serif;;
 				font-size: 24px;
-				margin-top: 5%;
-				margin-left:100px;
-				display:unset;
-				text-align:center;
+				margin-top: -7%;
+				margin-left:200px;
+				display:flex;
 				}
 header img {position:relative;
 				border:solid 2.5px black;
@@ -34,8 +40,9 @@ header .subheading {color: #FFB046;
 				font-size: 16px;
 				text-align: center;
 				padding-bottom:1px;
+				
 				}
-.ham { visibility:hidden;}
+.ham { visibility: hidden;}
 
 .navi { visibility:visible;
 		background-color:#FFB046;
@@ -60,22 +67,39 @@ main h2 {text-align:center;
 		 font-size: 24px;
 		 color:#FFB046;}
 		 
-main .currentweather{margin-left: 20%; margin-right: 20%;}
 
-article div img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: 175%;
-  margin-left:2%;
-  margin-right: 0;  /* fill the page in the small/phone view */
+*{
+	box-sizing:border-box;
+}
+main {font-family: "Roboto Slab", serif; 
+	  line-height:1.5;
+	   padding:1em;}
+main h2 {text-align:center;
+		 font-family: "Roboto Slab", serif;
+		 font-size: 24px;
+		 color:#B84DF4;}
+.form{
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	padding:1em;
+	box-shadow:0 0 25px 0 #FFB046;
+}
+span{
+	padding:1em;
+	
 }
 
 footer {background-color: #FFB046;
-		text-align: center;
+		text-align:center;
 		font-family:"Comic Sans MS", sans-serif;
 		}
 		
-footer aside {
+footer aside {background-color: #FFB046
+			  
 			  }
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
-/* Other Class Selectors */  
-}
+/* Other Class Selectors */
+}* This main css file contains the default rules and is geared toward the small/phone view */
+

@@ -52,22 +52,29 @@ header .subheading {color: #FFB046;
 .navi.responsive li { background-color: #eee; display: flex; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
 .navi.responsive li a {   padding: 1rem; text-align: center;  display: flex; text-decoration:none; }
 .navigation.responsive li a:hover { background-color: #ddd; }
-
-
-main {}
+		 
+*{
+	box-sizing:border-box;
+}
+main {font-family: "Roboto Slab", serif; 
+	  line-height:1.5;
+	   padding:1em;}
 main h2 {text-align:center;
 		 font-family: "Roboto Slab", serif;
 		 font-size: 24px;
-		 color:#FFB046;}
-		 
-main .currentweather{margin-left: 20%; margin-right: 20%;}
-
-article div img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: 175%;
-  margin-left:2%;
-  margin-right: 0;  /* fill the page in the small/phone view */
+		 color:#B84DF4;}
+.form{
+	padding:1em;
+	box-shadow:0 0 25px 0 #FFB046;
 }
+.form form{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
 
+}
+span{
+	padding:1em;
+}
 footer {background-color: #FFB046;
 		text-align: center;
 		font-family:"Comic Sans MS", sans-serif;
