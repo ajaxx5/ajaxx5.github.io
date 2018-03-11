@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What's the Weather Like up there?-Franklin Page</title>
+  <meta name="Author" content="Ashley Jackman">
+  <meta name="description" content="Franklin Page">
+  
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="Styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="Styles/Hmain-9.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="Styles/Hmedium-9.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="Styles/Hlarge-9.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header>
+    <img src="https://github.com/ajaxx5/ajaxx5.github.io/blob/master/Assignments/Lesson%206/Images/cloudsmall.png?raw=true" alt="Smiling Cloud" 
+	srcset="https://github.com/ajaxx5/ajaxx5.github.io/blob/master/Assignments/Lesson%206/Images/cloudsmall.png?raw=true 1x,
+			https://github.com/ajaxx5/ajaxx5.github.io/blob/master/Assignments/Lesson%206/Images/cloudmedium.png?raw=true 2x,
+			https://github.com/ajaxx5/ajaxx5.github.io/blob/master/Assignments/Lesson%206/Images/cloudlarge.png?raw=true 3x">
+    <h1>What's the Weather like up there?</h1>
+    <div class="subheading">We find out so you don't have to!</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+ <button class="ham" onclick="toggleHam()">&#9776;</button> 
+  <nav>
+    <ul class="navi">
+    	<li><a href="#">Home</a></li>
+    	<li class="active"><a href="#">How's Franklin</a></li>
+    	<li><a href="#">How's Greenville</a></li>
+    	<li><a href="#">How's Springfield</a></li>
+    	<li><a href="#">The Storm Center</a></li>
+    	<li><a href="https://ajaxx5.github.io/Assignments/Lesson%207/Gallery.html">Weather Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <div class="frank">
+    <h2>Weather Conditions for <span id="place"> City, State</span></h2>
+    <p>Forecast: <span id="cast">forcast</span></p>
+    <p>Wind Speed: <span id= "wind">wind</span> mph </p>
+    <p>Current Temp: <span id=temp> temp</span> &deg;</p>
+    <p>Weather Conditions: <span id="Weathercon">weathercon</span></p>
+    <img id="w_icon" src="" alt="current weather">
+    </div>
+    <section>
+
+    </section>
+
+  </main>
+  
+  <footer>
+    <aside>
+      Contact Us!<br>
+	  What's the Weather like up there? <br>
+		123 Main Street <br>
+	   Franklin, MU 83454 <br>
+		(999) 999-9999<br>
+	  contact@whatstheweatherlike.com</p>
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | What's the Weather like up there? | <span id="currentdate">Feb 17,2018 </span></p>
+  </footer>
+
+  <script src="Scripts/hamburger.js"></script>
+  <script src="Scripts/currentdate.js"></script>
+  <script type="text/javascript">date();</script>
+  <script src="Scripts/wu-weather.js"></script>
+ 
+
+</body>
+</html>
