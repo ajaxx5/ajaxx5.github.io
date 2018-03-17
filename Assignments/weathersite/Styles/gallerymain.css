@@ -4,7 +4,7 @@
 
 body {
   font-size: 16px;
-  background-color:#45E3F2;
+  background-color:#4414DF;
   /* Declare the base font-family - from google font api or other */
 }
 
@@ -22,7 +22,7 @@ header h1 {color: #B84DF4;
 				}
 header img {position:relative;
 				border:solid 2.5px black;
-				background-color:#45E3F2;
+				background-color:#4414DF;
 				width:20%
 			
 				}
@@ -39,9 +39,9 @@ header .subheading {color: #FFB046;
 .navi li { display: none; }
 .navi.responsive { position: relative; }
 .navi.responsive li { background-color: #eee; display: flex; justify-content: center; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
-.navi.responsive li a {   padding: 1rem; text-align: center;  display: flex; text-decoration:none; }.navigation.responsive li a:hover { background-color: #ddd; }
-}
-
+.navi.responsive li a {padding: 1rem; text-align: center;  display: flex; text-decoration:none; }.navigation.responsive li a:hover { background-color: #ddd; }
+.navi.responsive li.active a {background-color:#B84DF4; padding: 1em; text-align: center;  display: flex; text-decoration:none; }
+.navigation.responsive li a:hover { background-color: #ddd; }
 
 main {}
 main h2 {text-align:center;

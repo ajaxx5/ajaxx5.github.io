@@ -55,9 +55,14 @@ header .subheading {color: #FFB046;
 		
 .navi li { display:flex;
 		flex: 2;}
+.navi li.active { display:flex;
+			flex: 2; background-color:#B84DF4;}
+.navi li.active a  { display:flex;
+				flex: 2;  background-color:#B84DF4;}
 .navi.responsive { position: relative; }
 .navi.responsive li { background-color: #eee; display: flex; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
 .navi.responsive li a {   padding: 1rem; text-align: center;  display: flex; text-decoration:none; }
+
 .navigation.responsive li a:hover { background-color: #ddd; }
 
 
