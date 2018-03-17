@@ -1,0 +1,47 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+  
+  section.forecast { display: ???; }  /* show the 10-day forecast with the medium view and up */
+  
+  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+
+  * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  background-color:#45E3F2;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+  max-width: 100%;
+  
+}
+
+header {}
+header h1 {color: #B84DF4;
+				font-family: "Roboto Slab", serif;;
+				font-size: 24px;
+				margin-top: -7%;
+				margin-left:200px;
+				display:flex;
+				}
+header img {position:relative;
+				border:solid 2.5px black;
+				background-color:#45E3F2;
+				width:12%
+			
+				}
+header .subheading {color: #FFB046;
+				font-family: "Roboto Slab", serif;
+				font-size: 16px;
+				text-align: center;
+}
+main .pics{
+	grid-template-columns: 1fr 1fr;
+}
+
+ 

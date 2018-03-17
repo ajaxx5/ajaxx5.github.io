@@ -1,0 +1,105 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+  
+  section.forecast { display: flex; flex-direction: column;}  /* show the 10-day forecast with the medium view and up */
+  
+  article p.town-article img { width: 62.666%; display: flex; justify-content: flex-end; }  /* responsive images */
+
+  * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  background-color:#45E3F2;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+  max-width: 100%;
+  
+}
+
+header {}
+header h1 {color: #B84DF4;
+				font-family: "Roboto Slab", serif;;
+				font-size: 24px;
+				margin-top: -7%;
+				margin-left:200px;
+				display:flex;
+				}
+header img {position:relative;
+				border:solid 2.5px black;
+				background-color:#45E3F2;
+				width:12%
+			
+				}
+header .subheading {color: #FFB046;
+				font-family: "Roboto Slab", serif;
+				font-size: 16px;
+				text-align: center;
+				padding-bottom:1px;
+				
+				}
+.ham { visibility: hidden;}
+
+.navi { visibility:visible;
+		background-color:#FFB046;
+		font-family:"Comic Sans MS", sans-serif;
+		font-size: 16px;
+		display:flex;
+		text-align:center;
+		padding:1.3em;
+		margin-bottom:5px;}
+		
+.navi li { display:flex;
+		flex: 2;}
+.navi.responsive { position: relative; }
+.navi.responsive li { background-color: #eee; display: flex; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
+.navi.responsive li a {   padding: 1rem; text-align: center;  display: flex; text-decoration:none; }
+.navigation.responsive li a:hover { background-color: #ddd; }
+
+
+main {}
+main h2 {text-align:center;
+		 font-family: "Roboto Slab", serif;
+		 font-size: 24px;
+		 color:#FFB046;}
+		 
+
+*{
+	box-sizing:border-box;
+}
+main {font-family: "Roboto Slab", serif; 
+	  line-height:1.5;
+	   padding:1em;}
+main h2 {text-align:center;
+		 font-family: "Roboto Slab", serif;
+		 font-size: 24px;
+		 color:#B84DF4;}
+.form{
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	padding:1em;
+	box-shadow:0 0 25px 0 #FFB046;
+}
+span{
+	padding:1em;
+	
+}
+
+footer {background-color: #FFB046;
+		text-align:center;
+		font-family:"Comic Sans MS", sans-serif;
+		}
+		
+footer aside {background-color: #FFB046
+			  
+			  }
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+}* This main css file contains the default rules and is geared toward the small/phone view */
+
