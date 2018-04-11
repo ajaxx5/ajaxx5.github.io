@@ -1,0 +1,64 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+  article p.town-article img { width: 29.333%; }
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  background-color:#4414DF;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {}
+header h1 {color: #B84DF4;
+				font-family: "Roboto Slab", serif;;
+				font-size: 24px;
+				margin-top: -7%;
+				margin-left:200px;
+				display:flex;
+				}
+header img {position:relative;
+				border:solid 2.5px black;
+				background-color:#4414DF;
+				width:12%
+			
+				}
+header .subheading {color: #FFB046;
+				font-family: "Roboto Slab", serif;
+				font-size: 16px;
+				text-align: center;
+				padding-bottom:1px;
+				
+				}
+.ham { visibility: hidden;}
+
+.navi { visibility:visible;
+		background-color:#FFB046;
+		font-family:"Comic Sans MS", sans-serif;
+		font-size: 18px;
+		display:flex;
+		text-align:center;
+		padding:1.3em;
+		margin-bottom:5px;}
+		
+.navi li { display:flex;
+		flex: 2;}
+.navi li.active { display:flex;
+			flex: 2; background-color:#B84DF4;}
+.navi li.active a  { display:flex;
+				flex: 2;  background-color:#B84DF4;}
+.navi.responsive { position: relative; }
+.navi.responsive li { background-color: #eee; display: flex; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
+.navi.responsive li a {   padding: 1rem; text-align: center;  display: flex; text-decoration:none; }
+.navigation.responsive li a:hover { background-color: #ddd; }
+
+
+main .pics{
+	grid-template-columns: 1fr 1fr 1fr;
+}
+}

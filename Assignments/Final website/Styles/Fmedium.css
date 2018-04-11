@@ -1,0 +1,131 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+  
+  section.forecast { display: flex; flex-direction: column;}  /* show the 10-day forecast with the medium view and up */
+  
+  article p.town-article img { width: 62.666%; display: flex; justify-content: flex-end; }  /* responsive images */
+
+  * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  background-color: #4414DF;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+  max-width: 100%;
+  
+}
+
+header {}
+header h1 {color: #B84DF4;
+				font-family: "Roboto Slab", serif;;
+				font-size: 24px;
+				margin-top: -7%;
+				margin-left:200px;
+				display:flex;
+				}
+header img {position:relative;
+				border:solid 2.5px black;
+				background-color:#4414DF;
+				width:12%
+			
+				}
+header .subheading {color: #FFB046;
+				font-family: "Roboto Slab", serif;
+				font-size: 16px;
+				text-align: center;
+				padding-bottom:1px;
+				
+				}
+.ham { visibility: hidden;}
+
+.navi { visibility:visible;
+		background-color:#FFB046;
+		font-family:"Comic Sans MS", sans-serif;
+		font-size: 18px;
+		display:flex;
+		text-align:center;
+		padding:1.3em;
+		margin-bottom:5px;}
+		
+.navi li { display:flex;
+		flex: 2;}
+.navi li.active { display:flex;
+			flex: 2; background-color:#B84DF4;}
+.navi li.active a  { display:flex;
+				flex: 2;  background-color:#B84DF4;}
+.navi.responsive { position: relative; }
+.navi.responsive li { background-color: #eee; display: flex; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
+.navi.responsive li a {   padding: 1rem; text-align: center;  display: flex; text-decoration:none; }
+
+.navigation.responsive li a:hover { background-color: #ddd; }
+
+
+main {}
+main h2 {text-align:center;
+		 font-family: "Roboto Slab", serif;
+		 font-size: 24px;
+		 color:#FFB046;}
+		 
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+
+main figure img {padding-bottom:1em;
+				width:98%;
+				flex:1 0 15em;
+				margin:.5em;
+				
+					}
+main .currentweather{display: flex;}
+main .currentweather .current{ display:flex; padding:50px; margin-bottom: 50px;}
+main .currentweather .current picture img{width:150px; height:150px;}
+main .currentweather .sunny{ margin-left:50px; margin-top:60px;}
+main .currentweather .weather{display:flex; flex-direction:row; margin-left:50px; }
+main .currentweather .weather .highlow{display: flex; flex-direction:column;}
+main .currentweather .weather .conditions{margin-bottom: 20px;}
+
+main .frankFull{
+	display: flex;
+	text-align: center;
+}
+
+main .forecast{
+	      visibility:visible;
+		  background-color: #FFB046;
+		  margin-bottom:1em;
+		  display:flex;}		  
+.forecast h3{text-align:center; margin-bottom:-10px;}
+
+.forecast table{text-align:center;
+				padding-top:2em;
+				width: 100%;
+				 }
+article{font-family:"Comic Sans MS", sans-serif;}
+article div{display: flex; flex-direction: row; padding: 2em;}
+article h3{color: #B84DF4;
+		font-size:22px;
+		font-family: "Roboto Slab", serif;
+		margin-bottom:0px;}
+article div img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 100%;
+  margin-left:2%;
+  margin-right: 0;  /* fill the page in the small/phone view */
+}
+
+footer {background-color: #FFB046;
+		text-align:center;
+		font-family:"Comic Sans MS", sans-serif;
+		}
+		
+footer aside {background-color: #FFB046
+			  
+			  }
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+}* This main css file contains the default rules and is geared toward the small/phone view */
+

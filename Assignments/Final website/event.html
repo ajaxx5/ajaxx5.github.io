@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What's the Weather Like up there?-The Storm Center Page</title>
+  <meta name="Author" content="Ashley Jackman">
+  <meta name="description" content="The Storm Center">
+  
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="Styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="Styles/stormcmain.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="Styles/stormcmedium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="Styles/stormclarge.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header>
+    <img src="https://github.com/ajaxx5/ajaxx5.github.io/blob/master/Assignments/Lesson%206/Images/cloudsmall.png?raw=true" alt="Smiling Cloud" 
+	srcset="https://github.com/ajaxx5/ajaxx5.github.io/blob/master/Assignments/Lesson%206/Images/cloudsmall.png?raw=true 1x,
+			https://github.com/ajaxx5/ajaxx5.github.io/blob/master/Assignments/Lesson%206/Images/cloudmedium.png?raw=true 2x,
+			https://github.com/ajaxx5/ajaxx5.github.io/blob/master/Assignments/Lesson%206/Images/cloudlarge.png?raw=true 3x">
+    <h1>What's the Weather like up there?</h1>
+    <div class="subheading">We find out so you don't have to!</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+ <button class="ham" onclick="toggleHam()">&#9776;</button> 
+  <nav>
+    <ul id="mainmenu" class="navi">
+    	<li><a href="https://ajaxx5.github.io/Assignments/weathersite/Homepage.html">Home</a></li>
+    	<li><a href="https://ajaxx5.github.io/Assignments/weathersite/Franklin.html">How's Franklin</a></li>
+    	<li><a href="https://ajaxx5.github.io/Assignments/weathersite/Greenville.html">How's Greenville</a></li>
+    	<li><a href="https://ajaxx5.github.io/Assignments/weathersite/Springfield.html">How's Springfield</a></li>
+    	<li class="active"><a href="https://ajaxx5.github.io/Assignments/weathersite/Stormcenter.html">The Storm Center</a></li>
+    	<li><a href="https://ajaxx5.github.io/Assignments/weathersite/Gallery.html">Weather Gallery</a></li>
+    </ul>		
+  </nav>
+
+	<main>
+	<h2> The Storm Center! </h2>
+    <div class="form">
+        <form action="https://ajaxx5.github.io/Assignments/Lesson%209/Thanks-9.html">
+          <p>
+            <label>Your Full Name:</label>
+            <input type="text" name="name"
+              pattern="[A-Za-z ]{5,}" required>
+          </p>
+          <p>
+            <label>Your email address:</label>
+            <input type="email" name="email"
+             placeholder="youremail@email.com">
+          </p>
+          <p>
+            <label>Your phone number:</label>
+            <input type="tel" name="phone" required>
+          </p>
+          <p>
+            <label>Zip code:</label>
+            <input type="number" name="zip" required>
+          </p>
+          <p>
+            <label>The Storm Date:</label>
+            <input type="date" name="date">
+          </p>
+          <p>
+            <label>The Storm Type:</label>
+            <input list="weather" name="storm">
+             <datalist id="weather">
+               <option value="Hail"></option>
+               <option value="Thunderstorm"></option>
+               <option value="Hurricane"></option>
+               <option value="Flash Flood"></option>
+               <option value="Tornado"></option>
+              </datalist>
+          </p>
+          <p>
+            <label>The Storm Severity (1 to 10):</label>
+            
+            <input type="range" min="1" max="10" vaule="5" name="severity"
+             class="slider" id="therange" oninput="adjustRating(this.value)"
+             onchange="adjustRating(this.value)">
+              <span id="theratingvalue">5</span>
+          
+          </p>
+          <p>
+            <label>Storm Region:</label>
+            <select>
+                <option value="default" selected disabled hidden>Select Region</option>
+                <option value="Franklin">Franklin</option>
+                <option value="Greenville">Greenville</option>
+                <option value="Springfield">Springfield</option>
+            </select>
+          </p>
+          <p>
+             <label>In-danger:</label>
+                <input type="radio" name="y,n,m" vaule="yes">Yes
+                <input type="radio" name="y,n,m" vaule="no">No
+                <input type="radio" name="y,n,m" vaule="maybe">Maybe
+          </p>
+          <p>
+            <div class="com">
+             <label>Additional Information or Comments:</label>
+             <textarea rows="5" cols="40"></textarea>
+            </div>
+          </p>
+          <p>
+              <input type="submit" name="submit">
+          </p>
+        </form>
+    </div>
+
+ </main>
+ 
+ 
+  <footer>
+    <aside>
+      Contact Us!<br>
+	  What's the Weather like up there? <br>
+		123 Main Street <br>
+	   Franklin, MU 83454 <br>
+		(999) 999-9999<br>
+	  contact@whatstheweatherlike.com</p>
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | What's the Weather like up there? | <span id="currentdate">Feb 17,2018 </span></p>
+  </footer>
+
+  <script src="Scripts/hamburger.js"></script>
+  <script src="Scripts/currentdate.js"></script>
+  <script src="Scripts/theratingvalue.js"></script>
+  <script src="Scripts/active.js"></script>
+  <script type="text/javascript">date();</script>
+  
+ 
+
+</body>
+</html>
+ 
