@@ -10,43 +10,39 @@
   * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-  font-size: 16px;
-  background-color: #4414DF;
-  /* Declare the base font-family - from google font api or other */
-}
-
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-  max-width: 100%;
+	font-size: 16px;
+	background-color:#60c400;
+	/* Declare the base font-family - from google font api or other */
+  }
   
-}
+header, nav, main, footer {max-width:100%; /* the comma means apply the following CSS declarations to all of the listed elements */
+	/* Declare the maximum width and other main element rules to limit the stretch on wide views */
+  }
+  
+header {background-color: #08588c;
+	  display:flex;}
+header .headers h1 {color:#FC5820;
+		font-family: "Fria sans", serif;
+		font-size: 24px;
+		margin-left:5px;
+		text-align:center;
+		}
+header img {border:solid 2.5px #FC5820;
+			width:100px;
+			}
+header .headers{width: 100%;}
+  
+header .headers .heading {color: #FC5820;
+		 font-family: "Fria sans", serif;
+		 font-size: 20px;
+		 text-align: center;
+		  }
 
-header {}
-header h1 {color: #B84DF4;
-				font-family: "Roboto Slab", serif;;
-				font-size: 24px;
-				margin-top: -7%;
-				margin-left:200px;
-				display:flex;
-				}
-header img {position:relative;
-				border:solid 2.5px black;
-				background-color:#4414DF;
-				width:12%
-			
-				}
-header .subheading {color: #FFB046;
-				font-family: "Roboto Slab", serif;
-				font-size: 16px;
-				text-align: center;
-				padding-bottom:1px;
-				
-				}
 .ham { visibility: hidden;}
 
 .navi { visibility:visible;
-		background-color:#FFB046;
-		font-family:"Comic Sans MS", sans-serif;
+		background-color:#FC5820;
+		font-family:"sans-serif", serif;
 		font-size: 18px;
 		display:flex;
 		text-align:center;
@@ -56,73 +52,50 @@ header .subheading {color: #FFB046;
 .navi li { display:flex;
 		flex: 2;}
 .navi li.active { display:flex;
-			flex: 2; background-color:#B84DF4;}
+			flex: 2; background-color:#FC5820;}
 .navi li.active a  { display:flex;
-				flex: 2;  background-color:#B84DF4;}
+				flex: 2;  background-color:#FC5820;}
 .navi.responsive { position: relative; }
 .navi.responsive li { background-color: #eee; display: flex; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
 .navi.responsive li a {   padding: 1rem; text-align: center;  display: flex; text-decoration:none; }
-
 .navigation.responsive li a:hover { background-color: #ddd; }
 
 
-main {}
-main h2 {text-align:center;
-		 font-family: "Roboto Slab", serif;
-		 font-size: 24px;
-		 color:#FFB046;}
-		 
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-
-main figure img {padding-bottom:1em;
-				width:98%;
-				flex:1 0 15em;
-				margin:.5em;
-				
-					}
-main .currentweather{display: flex;}
-main .currentweather .current{ display:flex; padding:50px; margin-bottom: 50px;}
-main .currentweather .current picture img{width:150px; height:150px;}
-main .currentweather .sunny{ margin-left:50px; margin-top:60px;}
-main .currentweather .weather{display:flex; flex-direction:row; margin-left:50px; }
-main .currentweather .weather .highlow{display: flex; flex-direction:column;}
-main .currentweather .weather .conditions{margin-bottom: 20px;}
-
-main .frankFull{
-	display: flex;
+main{font-family: "sans serif", serif;
 	text-align: center;
-}
+	color: #08588c;
+	padding:1em;
+	}
+main h2 {text-align:center;
+		 font-family: "Fria sans", serif;
+		 font-size: 24px;
+		 color:#FC5820;}
+main h3{text-align:center;
+		font-family: "Fria sans", serif;
+		font-size: 20px;
+		color:#FC5820;}
 
-main .forecast{
-	      visibility:visible;
-		  background-color: #FFB046;
-		  margin-bottom:1em;
-		  display:flex;}		  
-.forecast h3{text-align:center; margin-bottom:-10px;}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img {width:95%;
+				 padding:.5em;
+				 text-align:center;
+				 margin-left:2.5%;
+				}
+main h4{text-align:center;
+		font-family: "Fria sans", serif;
+		font-size: 20px;
+		color:#FC5820;}		 
 
-.forecast table{text-align:center;
-				padding-top:2em;
-				width: 100%;
-				 }
-article{font-family:"Comic Sans MS", sans-serif;}
-article div{display: flex; flex-direction: row; padding: 2em;}
-article h3{color: #B84DF4;
-		font-size:22px;
-		font-family: "Roboto Slab", serif;
-		margin-bottom:0px;}
-article div img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: 100%;
-  margin-left:2%;
-  margin-right: 0;  /* fill the page in the small/phone view */
-}
 
-footer {background-color: #FFB046;
-		text-align:center;
-		font-family:"Comic Sans MS", sans-serif;
-		}
-		
-footer aside {background-color: #FFB046
-			  
+
+
+footer {background-color: #08588c;
+	color:#FC5820;
+	text-align: center;
+	font-family:"Fria sans", sans-serif;
+	}
+	
+footer aside {
 			  }
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
