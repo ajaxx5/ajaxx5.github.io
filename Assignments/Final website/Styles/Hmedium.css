@@ -21,26 +21,24 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
   
 }
 
-header {background-color: #08588c}
+header {background-color: #08588c;
+	display:flex;}
 header h1 {color:#FC5820;
-				font-family: "Fria sans", serif;
-				font-size: 24px;
-				margin-top: -7%;
-				margin-left:200px;
-				display:flex;
-				}
-header img {position:relative;
-				border:solid 2.5px #FC5820;
-				width:12%
-			
-				}
-header .subheading {color: #FC5820;
-				font-family: "Fria sans", serif;
-				font-size: 16px;
-				text-align: center;
-				padding-bottom:1px;
-				
-				}
+	  font-family: "Fria sans", serif;
+	  font-size: 24px;
+	  margin-left:5px;
+	  text-align:center;
+	  }
+header img {border:solid 2.5px #FC5820;
+	   width:100px;
+	   }
+
+header .heading {color: #FC5820;
+	   font-family: "Fria sans", serif;
+	   font-size: 18px;
+	   text-align: center;
+		}
+
 .ham { visibility: hidden;}
 
 .navi { visibility:visible;
