@@ -6,7 +6,7 @@
 
 body {
   font-size: 16px;
-  background-color:#4414DF;
+  background-color:#60c400;
   /* Declare the base font-family - from google font api or other */
 }
 
@@ -14,9 +14,9 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
-header {}
-header h1 {color: #B84DF4;
-				font-family: "Roboto Slab", serif;
+header {background-color: #08588c}
+header h1 {color:#FC5820;
+				font-family: "Fria sans", serif;
 				font-size: 24px;
 				margin-top: 5%;
 				margin-left:100px;
@@ -24,12 +24,11 @@ header h1 {color: #B84DF4;
 				text-align:center;
 				}
 header img {position:relative;
-				border:solid 2.5px black;
-				background-color:#4414DF;
+				border:solid 2.5px #FC5820;
 				width:12%
 			
 				}
-header .subheading {color: #FFB046;
+header .subheading {color: #FC5820;
 				font-family: "Roboto Slab", serif;
 				font-size: 16px;
 				text-align: center;
@@ -38,7 +37,7 @@ header .subheading {color: #FFB046;
 .ham { visibility:hidden;}
 
 .navi { visibility:visible;
-		background-color:#FFB046;
+		background-color:#FC5820;
 		font-family:"Comic Sans MS", sans-serif;
 		font-size: 18px;
 		display:flex;
@@ -49,40 +48,33 @@ header .subheading {color: #FFB046;
 .navi li { display:flex;
 		flex: 2;}
 .navi li.active { display:flex;
-			flex: 2; background-color:#B84DF4;}
+			flex: 2; background-color:#FC5820;}
 .navi li.active a  { display:flex;
-				flex: 2;  background-color:#B84DF4;}
+				flex: 2;  background-color:#FC5820;}
 .navi.responsive { position: relative; }
 .navi.responsive li { background-color: #eee; display: flex; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
 .navi.responsive li a {   padding: 1rem; text-align: center;  display: flex; text-decoration:none; }
 .navigation.responsive li a:hover { background-color: #ddd; }
 
 
-main {font-family: "Roboto Slab", serif;
+main {font-family: "sans serif", serif;
 	text-align: center;
-	color: #B84DF4;
+	color: #08588c;
 	}
-h2{ color: #FFB046;
+h2{ color: #FC5820;
 }
-main .frank{
- 	border-style:solid;
- 	border-width:5px;
-	border-color: #B84DF4;
-	border-radius:5px;
-	color:#B84DF4;
-}
-main section{
-	 padding:1em;
-	 display:grid;
-	 grid-template-columns: 1fr 1fr;
-	
+main .bike pics{
+ padding:1em;
+ display:grid;
+ grid-template-columns: 1fr 1fr;
 }
 
-footer {background-color: #FFB046;
-		text-align: center;
-		font-family:"Comic Sans MS", sans-serif;
+footer {background-color: #08588c;
+		color:#FC5820;
+		text-align:center;
+		font-family:"fria sans", sans-serif;
 		}
-		
+
 footer aside {
 			  }
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */

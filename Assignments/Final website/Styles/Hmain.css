@@ -21,8 +21,7 @@ header h1 {color:#FC5820;
 				display:flex;
 				}
 header img {position:relative;
-				border:solid 2.5px black;
-				background-color:#FC5820;
+				border:solid 2.5px #FC5820;
 				width:20%
 			
 				}
@@ -50,13 +49,9 @@ main {font-family: "sans serif", serif;
 	   }
 h2{ color: #FC5820;
 }
-main .frank{
+main .bike pics{
 	padding:1em;
-	border-style:solid;
-	border-width:5px;
-	border-color: #B84DF4;
-}
-main section{
+	display:grid;
 	grid-template-columns: 1fr 1fr;
 }
 
