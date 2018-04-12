@@ -5,70 +5,75 @@
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-	font-size: 18px;
+	font-size: 16px;
 	background-color:#60c400;
 	/* Declare the base font-family - from google font api or other */
   }
   
-  header, nav, main, footer {max-width:100%; /* the comma means apply the following CSS declarations to all of the listed elements */
+header, nav, main, footer {max-width:100%; /* the comma means apply the following CSS declarations to all of the listed elements */
 	/* Declare the maximum width and other main element rules to limit the stretch on wide views */
   }
   
-  header {background-color: #08588c;
+header {background-color: #08588c;
 	  display:flex;}
-  header .headers h1 {color:#FC5820;
+header .headers h1 {color:#FC5820;
 		font-family: "Fria sans", serif;
 		font-size: 24px;
 		margin-left:5px;
 		text-align:center;
 		}
-  header img {border:solid 2.5px #FC5820;
-		  width:100px;
-		  }
-  header .headers{width: 100%;}
+header img {border:solid 2.5px #FC5820;
+			width:100px;
+			}
+header .headers{width: 100%;}
   
-  header .headers .heading {color: #FC5820;
+header .headers .heading {color: #FC5820;
 		 font-family: "Fria sans", serif;
 		 font-size: 20px;
 		 text-align: center;
 		  }
+
 .ham { visibility:hidden;}
 
 .navi { visibility:visible;
-	background-color:#FC5820;
-	font-family:"sans-serif", serif;
-	font-size: 18px;
-	display:flex;
-	text-align:center;
-	padding:1.3em;
-	margin-bottom:5px;}
-	
+		background-color:#FC5820;
+		font-family:"sans-serif", serif;
+		font-size: 18px;
+		display:flex;
+		text-align:center;
+		padding:1.3em;
+		margin-bottom:5px;}
+		
 .navi li { display:flex;
-	flex: 2;}
+		flex: 2;}
 .navi li.active { display:flex;
-		flex: 2; background-color:#FC5820;}
+			flex: 2; background-color:#FC5820;}
 .navi li.active a  { display:flex;
-			flex: 2;  background-color:#FC5820;}
+				flex: 2;  background-color:#FC5820;}
 .navi.responsive { position: relative; }
 .navi.responsive li { background-color: #eee; display: flex; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
 .navi.responsive li a {   padding: 1rem; text-align: center;  display: flex; text-decoration:none; }
 .navigation.responsive li a:hover { background-color: #ddd; }
-
-
+		 
+*{
+	box-sizing:border-box;
+}
 main{font-family: "sans serif", serif;
 	text-align: center;
 	color: #08588c;
 	padding:1em;
 	}
-main h2 {text-align:center;
-		 font-family: "Fria sans", serif;
-		 font-size: 24px;
-		 color:#FC5820;}
-main .serpic1{
-	Display:grid;
-	grid-template-columns: 1fr 1fr;
-	padding:1em;
-} 
+	main h1{text-align:center;
+		font-family: "Fria sans", serif;
+		font-size: 24px;
+		color:#FC5820;}
+main h2{text-align:center;
+	   font-family: "Fria sans", serif;
+	   font-size: 20px;
+	   color:#FC5820;}
+
+
+main .map{width:100px;}
 
 footer {background-color: #08588c;
 	color:#FC5820;

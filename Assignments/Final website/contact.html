@@ -3,128 +3,81 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>What's the Weather Like up there?-Springfield Page</title>
+  <title>The Mountain Spoke!- Contact Page</title>
   <meta name="Author" content="Ashley Jackman">
-  <meta name="description" content="Springfield Page">
+  <meta name="description" content="Contact Page">
   
   <!-- external style references in the proper cascading order -->    
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">  <!-- Google API font reference -->
   <link href="Styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
-  <link href="Styles/Fmain.css" rel="stylesheet">    <!-- default styles - small/phone views -->
-  <link href="Styles/Fmedium.css" rel="stylesheet">  <!-- medium/tablet views -->
-  <link href="Styles/Flarge.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+  <link href="Styles/Cmain.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="Styles/Cmedium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="Styles/Clarge.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
 </head>
 <body>
 
-  <header>
-    <img src="https://github.com/ajaxx5/ajaxx5.github.io/blob/master/Assignments/Lesson%206/Images/cloudsmall.png?raw=true" alt="Smiling Cloud" 
-	srcset="https://github.com/ajaxx5/ajaxx5.github.io/blob/master/Assignments/Lesson%206/Images/cloudsmall.png?raw=true 1x,
-			https://github.com/ajaxx5/ajaxx5.github.io/blob/master/Assignments/Lesson%206/Images/cloudmedium.png?raw=true 2x,
-			https://github.com/ajaxx5/ajaxx5.github.io/blob/master/Assignments/Lesson%206/Images/cloudlarge.png?raw=true 3x">
-    <h1>What's the Weather like up there?</h1>
-    <div class="subheading">We find out so you don't have to!</div>
-  </header>
+    <header>
+        <img src="https://ajaxx5.github.io/Assignments/Final%20website/Images/logoS.jpg?raw=true" alt="Bike on mountain" 
+        srcset="https://ajaxx5.github.io/Assignments/Final%20website/Images/logoL.jpg?raw=true 1x,
+          https://ajaxx5.github.io/Assignments/Final%20website/Images/logoL.jpg?raw=true 2x,
+          https://ajaxx5.github.io/Assignments/Final%20website/Images/logoL.jpg?raw=true 3x">
+       <div class="headers"><h1>The Mountain Spoke!</h1>
+        <div class="heading">Does it speak to you?</div></div>
+      </header>
 
   <!-- site navigation use placeholder references -->
  <button class="ham" onclick="toggleHam()">&#9776;</button> 
   <nav>
     <ul id= "mainmenu" class="navi">
-    	<li><a href="https://ajaxx5.github.io/Assignments/weathersite/Homepage.html">Home</a></li>
-    	<li><a href="https://ajaxx5.github.io/Assignments/weathersite/Franklin.html">How's Franklin</a></li>
-    	<li><a href="https://ajaxx5.github.io/Assignments/weathersite/Greenville.html">How's Greenville</a></li>
-    	<li class="active"><a href="https://ajaxx5.github.io/Assignments/weathersite/Springfield.html">How's Springfield</a></li>
-    	<li><a href="https://ajaxx5.github.io/Assignments/weathersite/Stormcenter.html">The Storm Center</a></li>
-    	<li><a href="https://ajaxx5.github.io/Assignments/weathersite/Gallery.html">Weather Gallery</a></li>
+        <li class="active"><a href="https://ajaxx5.github.io/Assignments/weathersite/Homepage.html">Home</a></li>
+        <li><a href="https://ajaxx5.github.io/Assignments/weathersite/Franklin.html">Adventure Tours</a></li>
+        <li><a href="https://ajaxx5.github.io/Assignments/weathersite/Greenville.html">Events</a></li>
+        <li><a href="https://ajaxx5.github.io/Assignments/weathersite/Springfield.html">Sales</a></li>
+        <li><a href="https://ajaxx5.github.io/Assignments/weathersite/Stormcenter.html">Service</a></li>
+        <li><a href="https://ajaxx5.github.io/Assignments/weathersite/Gallery.html">Contact</a></li>
     </ul>		
   </nav>
     
   <main>
-  <div class="frankFull">
+  <div class="contact">
 	<figure>
-      <img src="https://ajaxx5.github.io/Assignments/weathersite/Images/Springsml.jpg?raw=true" alt="Springfield" 
-	     srcset="https://ajaxx5.github.io/Assignments/weathersite/Images/Springsml.jpg?raw=true 1x,
-               https://ajaxx5.github.io/Assignments/weathersite/Images/Springmed.jpg?raw=true 2x,
-               https://ajaxx5.github.io/Assignments/weathersite/Images/Springlrg.jpg?raw=true 3x">
+      <img src="https://ajaxx5.github.io/Assignments/Final%20website/Images/bike%20picS1.jpg?raw=true" alt="mountain bike race" 
+	     srcset="https://ajaxx5.github.io/Assignments/Final%20website/Images/bike%20picS1.jpg?raw=true 1x,
+               https://ajaxx5.github.io/Assignments/Final%20website/Images/bike%20picM1.jpg?raw=true 2x,
+               https://ajaxx5.github.io/Assignments/Final%20website/Images/bike%20picL1.jpg?raw=true 3x">
     </figure>
-
-		<div class="currentweather">
-      <div class="frank">
-        <h2>Weather Conditions for <span id="place"> City, State</span></h2>
-        <p>Forecast: <span id="cast">forcast</span></p>
-        <p>Wind Speed: <span id= "wind">wind</span> mph </p>
-        <p>Current Temp: <span id=temp> temp</span> &deg;</p>
-        <p>Weather Conditions: <span id="Weathercon">weathercon</span></p>
-        <img id="w_icon" src="" alt="current weather">
-      </div> 
-    </div>
+<h1>Come on down to the shop!</h1>
+<p>We look forward to hearing from you or seeing you in person!<br>
+  Hours: Monday- Saturday 8am - 6pm
+</p>
+<div class="map"></div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316277611047!2d-111.09290618443556!3d45.
+            67227287910392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!
+            2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523571338716"></iframe>
   </div>
-	</section>
+<h2>Contact Us!</h2>
+    Please feel ree to contact us with any questions or bike needs!<br>
+    The Mountain Spoke<br>
+    3950 Valley Commons Drive <br>
+    Bozeman, MT 59715 <br>
+    (999) 999-9999<br>
+    contact@themtnspoke.com</p>
+	  <img src="https://ajaxx5.github.io/Assignments/Final%20website/Images/bike%20picS4.jpg?raw=true" alt="mountain sunset"
+			srcset="https://ajaxx5.github.io/Assignments/Final%20website/Images/bike%20picS4.jpg?raw=true 1x,
+              https://ajaxx5.github.io/Assignments/Final%20website/Images/bike%20picM4.jpg?raw=true 2x,
+              https://ajaxx5.github.io/Assignments/Final%20website/Images/bike%20picL4.jpg?raw=true 3x">
 
-        
-    <section class="forecast">
-      <h3>10 Day Forecast</h3>
-      <table>
-	    <thead>
-          <tr>
-            <th>Day 1</th>
-            <th>Day 2</th>
-            <th>Day 3</th>
-            <th>Day 4</th>
-            <th>Day 5</th>
-            <th>Day 6</th>
-            <th>Day 7</th>
-            <th>Day 8</th>
-            <th>Day 9</th>
-            <th>Day 10</th>
-          </tr>
-		</thead>
-        <tbody>  
-          <tr>
-            <td>89&deg;F</td>
-            <td>87&deg;F</td>
-            <td>78&deg;F</td>
-            <td>75&deg;F</td>
-            <td>72&deg;F</td>
-            <td>72&deg;F</td>
-            <td>79&deg;F</td>
-            <td>83&deg;F</td>
-            <td>85&deg;F</td>
-            <td>89&deg;F</td>
-          </tr>
-		</tbody>
-      </table>
-    </section>
-      
-    <article>
-      <h3>Springfield still growing</h3>
-	  <div  class="town-article">
-      <p>
-          Idque labitur delectus id his, ut vel sumo dolore intellegat,
-          ne congue doctus singulis vim. Sanctus dissentias pri in, 
-          brute labores splendide nam ne. Quas soluta fabellas mea ut,
-          nam an choro nominati, eos integre prodesset dissentias et.
-          Utamur eleifend ea has.
-	  </p>
-	  <img src="https://ajaxx5.github.io/Assignments/weathersite/Images/Scitysml.jpg?raw=true" alt="mountain sunset"
-			srcset="https://ajaxx5.github.io/Assignments/weathersite/Images/Scitysml.jpg?raw=true 1x,
-              https://ajaxx5.github.io/Assignments/weathersite/Images/Scitymed.jpg?raw=true 2x,
-              https://ajaxx5.github.io/Assignments/weathersite/Images/Scitylrg.jpg?raw=true 3x">
 	</div>
 	</article>		  
   
   </main>
     
   <footer>
-    <aside>
-      Contact Us!<br>
-	  What's the Weather like up there? <br>
-		123 Main Street <br>
-	   Franklin, MU 83454 <br>
-		(999) 999-9999<br>
-	  contact@whatstheweatherlike.com</p>
-    </aside>
-    <p class="footer-bar">&copy;2017 All Rights Reserved | What's the Weather like up there? | <span id="currentdate">Feb 17,2018 </span></p>
-  </footer>
+      <aside>
+      
+      </aside>
+      <p class="footer-bar">&copy;2017 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Feb 17,2018 </span></p>
+    </footer>
 
   <script src="Scripts/hamburger.js"></script>
   <script src="Scripts/currentdate.js"></script>

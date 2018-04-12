@@ -1,12 +1,18 @@
-@media only screen and (min-width: 64em) {
-  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
   
-  article p.town-article img { width: 29.333%; }
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+  
+  section.forecast { display: flex; flex-direction: column;}  /* show the 10-day forecast with the medium view and up */
+  
+  article p.town-article img { width: 62.666%; display: flex; justify-content: flex-end; }  /* responsive images */
 
-body {
-	font-size: 18px;
+  * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+  body {
+	font-size: 16px;
 	background-color:#60c400;
+	font-family: "sans serif", serif;
 	/* Declare the base font-family - from google font api or other */
   }
   
@@ -32,43 +38,50 @@ body {
 		 font-size: 20px;
 		 text-align: center;
 		  }
-.ham { visibility:hidden;}
+
+.ham { visibility: hidden;}
 
 .navi { visibility:visible;
-	background-color:#FC5820;
-	font-family:"sans-serif", serif;
-	font-size: 18px;
-	display:flex;
-	text-align:center;
-	padding:1.3em;
-	margin-bottom:5px;}
-	
+		background-color:#FC5820;
+		font-family:"sans-serif", serif;
+		font-size: 18px;
+		display:flex;
+		text-align:center;
+		padding:1.3em;
+		margin-bottom:5px;}
+		
 .navi li { display:flex;
-	flex: 2;}
+		flex: 2;}
 .navi li.active { display:flex;
-		flex: 2; background-color:#FC5820;}
+			flex: 2; background-color:#FC5820;}
 .navi li.active a  { display:flex;
-			flex: 2;  background-color:#FC5820;}
+				flex: 2;  background-color:#FC5820;}
 .navi.responsive { position: relative; }
 .navi.responsive li { background-color: #eee; display: flex; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
 .navi.responsive li a {   padding: 1rem; text-align: center;  display: flex; text-decoration:none; }
 .navigation.responsive li a:hover { background-color: #ddd; }
 
 
+
+*{
+	box-sizing:border-box;
+}
 main{font-family: "sans serif", serif;
 	text-align: center;
 	color: #08588c;
 	padding:1em;
 	}
-main h2 {text-align:center;
+main h1{text-align:center;
 		 font-family: "Fria sans", serif;
 		 font-size: 24px;
 		 color:#FC5820;}
-main .serpic1{
-	Display:grid;
-	grid-template-columns: 1fr 1fr;
-	padding:1em;
-} 
+main h2{text-align:center;
+		font-family: "Fria sans", serif;
+		font-size: 20px;
+		color:#FC5820;}
+
+
+main .map{width:100px;}
 
 footer {background-color: #08588c;
 	color:#FC5820;
@@ -77,8 +90,10 @@ footer {background-color: #08588c;
 	}
 		
 footer aside {
+			  
 			  }
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
-/* Other Class Selectors */  
-}
+/* Other Class Selectors */
+}* This main css file contains the default rules and is geared toward the small/phone view */
+
