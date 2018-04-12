@@ -10,42 +10,40 @@
   * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-  font-size: 16px;
-  background-color:#4414DF;
-  /* Declare the base font-family - from google font api or other */
-}
-
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-  max-width: 100%;
+	font-size: 16px;
+	background-color:#60c400;
+	font-family: "sans serif", serif;
+	/* Declare the base font-family - from google font api or other */
+  }
   
-}
+  header, nav, main, footer {max-width:100%; /* the comma means apply the following CSS declarations to all of the listed elements */
+	/* Declare the maximum width and other main element rules to limit the stretch on wide views */
+  }
+  
+  header {background-color: #08588c;
+	  display:flex;}
+  header .headers h1 {color:#FC5820;
+		font-family: "Fria sans", serif;
+		font-size: 24px;
+		margin-left:5px;
+		text-align:center;
+		}
+  header img {border:solid 2.5px #FC5820;
+		  width:100px;
+		  }
+  header .headers{width: 100%;}
+  
+  header .headers .heading {color: #FC5820;
+		 font-family: "Fria sans", serif;
+		 font-size: 20px;
+		 text-align: center;
+		  }
 
-header {}
-header h1 {color: #B84DF4;
-				font-family: "Roboto Slab", serif;;
-				font-size: 24px;
-				margin-top: -7%;
-				margin-left:200px;
-				display:flex;
-				}
-header img {position:relative;
-				border:solid 2.5px black;
-				background-color:#4414DF;
-				width:12%
-				}
-header .subheading {color: #FFB046;
-				font-family: "Roboto Slab", serif;
-				font-size: 16px;
-				text-align: center;
-				padding-bottom:1px;	
-				margin-bottom:-10px;
-				}
 .ham { visibility: hidden;}
 
 .navi { visibility:visible;
-		background-color:#FFB046;
-		font-family:"Comic Sans MS", sans-serif;
+		background-color:#FC5820;
+		font-family:"sans-serif", serif;
 		font-size: 18px;
 		display:flex;
 		text-align:center;
@@ -55,14 +53,13 @@ header .subheading {color: #FFB046;
 .navi li { display:flex;
 		flex: 2;}
 .navi li.active { display:flex;
-			flex: 2; background-color:#B84DF4;}
+			flex: 2; background-color:#FC5820;}
 .navi li.active a  { display:flex;
-				flex: 2;  background-color:#B84DF4;}
+				flex: 2;  background-color:#FC5820;}
 .navi.responsive { position: relative; }
 .navi.responsive li { background-color: #eee; display: flex; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
 .navi.responsive li a {   padding: 1rem; text-align: center;  display: flex; text-decoration:none; }
 .navigation.responsive li a:hover { background-color: #ddd; }
-
 
 
 main {box-sizing:border-box;
@@ -70,26 +67,26 @@ main {box-sizing:border-box;
 	  line-height:1.5;
 	  padding:1em;
 	   margin-bottom:200px;
-	   color:#B84DF4;
-	   box-shadow:0 0 25px 0 #FFB046;
+	   color:#08588c;
+	   box-shadow:0 0 25px 0 #FC5820;
 	   text-align:center;
 	   font-size:20px;
 	   margin-top:55px;
 	   margin-left:5%;
 	   margin-right:5%;
 	}
-main h2 {text-align:center;
-		 font-family: "Roboto Slab", serif;
-		 font-size: 24px;
-		 color:#B84DF4;}
+	main h2 {text-align:center;
+		font-family: "Fria sans", serif;
+		font-size: 24px;
+		color:#FC5820;}
 
-footer {background-color: #FFB046;
-		text-align: center;
-		font-family:"Comic Sans MS", sans-serif;
-		}
+footer {background-color: #08588c;
+	color:#FC5820;
+	text-align: center;
+	font-family:"Fria sans", sans-serif;
+	}
 		
-footer aside {background-color: #FFB046
-			  
+footer aside {	  
 			  }
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
