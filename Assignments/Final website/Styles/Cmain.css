@@ -31,15 +31,14 @@ body {
 		 text-align: center;
 		  }
 				
-.ham { display: flex; position: absolute;top: 2.0rem;right: 1.25rem; }
-
-.navi { list-style: none; padding-left: 0; }
-.navi li { display: none; }
-.navi.responsive { position: relative; }
-.navi.responsive li { background-color: #eee; display: flex; justify-content: center; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
-.navi.responsive li a {   padding: 1rem; text-align: center;  display: flex; text-decoration:none; }
-.navi.responsive li.active a {background-color:#60c400; padding: 1em; text-align: center;  display: flex; text-decoration:none; }
-.navigation.responsive li a:hover { background-color: #ddd; }
+		  .ham { display: flex; position: absolute;top: 2.0rem;right: 1.25rem; }
+		  .navi { list-style: none; padding-left: 0; }
+		  .navi li { display: none; }
+		  .navi.responsive { position: relative; }
+		  .navi.responsive li { background-color: #eee; display: flex; justify-content: center; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
+		  .navi.responsive li a {padding: 1em; text-align: center;  display: flex; text-decoration:none; }
+		  .navi.responsive li.active a {background-color:#60c400; padding: 1em; text-align: center;  display: flex; text-decoration:none; }
+		  .navigation.responsive li a:hover { background-color: #ddd; }
 
 *{
 	box-sizing:border-box;
