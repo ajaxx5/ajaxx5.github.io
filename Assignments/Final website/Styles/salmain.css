@@ -41,11 +41,29 @@ body {
 .navi.responsive li.active a {background-color:#B84DF4; padding: 1em; text-align: center;  display: flex; text-decoration:none; }
 .navigation.responsive li a:hover { background-color: #ddd; }
 
-main {}
+main {color:#08588c;
+	  text-align:center;
+	  }
 main h2 {text-align:center;
 		 font-family: "Roboto Slab", serif;
 		 font-size: 24px;
-		 color:#08588c;}
+		 color:#08588c;
+		}
+main h3{text-align:center;
+	font-family: "Roboto Slab", serif;
+	font-size: 20px;
+	color:#FC5820;
+	}
+main h4{text-align:center;
+	font-family: "Roboto Slab", serif;
+	font-size: 20px;
+	color:#FC5820;
+	}
+main h5{text-align:center;
+	font-family: "Roboto Slab", serif;
+	font-size: 20px;
+	color:#FC5820;
+	}
 main .pics{
 	display:grid;
 	grid-template-columns: 1fr;
